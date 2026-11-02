@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #040405;
+    color: #f3f4f6;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism de Luxo */
+.glass-panel {
+  background: rgba(18, 18, 22, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-pill {
+  background: rgba(25, 25, 30, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Brilho e Iluminação Orgânica */
+.glow-ambient-warm {
+  background: radial-gradient(circle, rgba(255, 110, 64, 0.45) 0%, rgba(220, 60, 20, 0.15) 40%, rgba(0, 0, 0, 0) 70%);
+}
+
+.glow-ambient-cold {
+  background: radial-gradient(circle, rgba(37, 65, 178, 0.5) 0%, rgba(20, 30, 90, 0.15) 50%, rgba(0, 0, 0, 0) 75%);
+}
+
+/* Efeito de Vidro Iridescente do Orbe */
+.iridescent-mesh {
+  background: radial-gradient(circle at 35% 35%, #ff8359 0%, #d84315 28%, #1e3a8a 68%, #0f172a 100%);
+  filter: blur(1px);
+}
+
+/* Noise sutil */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
